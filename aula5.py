@@ -39,7 +39,8 @@ if __name__ == '__main__':
 
 
 
-    print("- Aluno2\nNome:", maria.get_nome())
+    
+
 
 
 
