@@ -24,6 +24,8 @@ class Veículo:
     def set_valor(self, novo):
         self.valor = novo
 
+    def aumenta_valor(self, valor_aumento):
+        self.valor = self.valor + valor_aumento
 
 
 
@@ -35,6 +37,7 @@ if __name__ == '__main__':
 
     carro2 = Veículo('Corolla', 2024, 190000.00 )
     print("Endereço hexadecimal do objeto2:", carro2)
+
 
 
     print('\nDados do carro1: \nModelo:', carro1.get_modelo())
@@ -56,11 +59,14 @@ if __name__ == '__main__':
     carro1.set_modelo("Camaro")
     print(f"\nNome atualizado {carro1.get_modelo()}")
 
-    carro1.set_ano("2015")
+    carro1.set_ano(2015)
     print(f"\nano atualizado {carro1.get_ano()}")
 
-    carro1.set_valor("1000000.00")
+    carro1.set_valor(1000000.00)
     print(f"\nvalor atualizado {carro1.get_valor()}")
+
+    vl_aumento = float(input("Valor do aumento: "))
+    print(f"Valor atualizado para {carro1.get_vlaumento()}")
 
 
 
