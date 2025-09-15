@@ -6,8 +6,9 @@ for i in range(1, 5+1, 1):
 
     ct = ct + 1
 
-    soma = soma + n
+    soma = soma + nota
 
     media = soma/ct
 
-print(f'{media}')
+
+print("\nMédia da turma:", media)
