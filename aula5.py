@@ -1,5 +1,5 @@
 import self
-class NomeClasse:
+class Aluno:
 
 
     def __init__(self, nome, mensalidade, idade):
@@ -23,7 +23,7 @@ class NomeClasse:
 
 
 if __name__ == '__main__':
-    joao = NomeClasse("João", 1100.00, 19)
+    joao = Aluno("João", 1100.00, 19)
     print('Endereço hexadecimal do João:', joao)
 
     joao.set_nome("José")
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print("\n ")
 
 
-    maria = NomeClasse("Maria", 1050.00, 17 )
+    maria = Aluno("Maria", 1050.00, 17 )
     print('Endereço hexadecimal de Maria:', maria)
 
     print("\n- Aluno1")
@@ -49,6 +49,7 @@ if __name__ == '__main__':
     print("Nome:", maria.get_nome())
     print("Mensalidade:", maria.get_mensalidade())
     print("Idade:", maria.get_idade())
+
 
 
 
