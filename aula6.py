@@ -66,7 +66,8 @@ if __name__ == '__main__':
     print(f"\nvalor atualizado {carro1.get_valor()}")
 
     vl_aumento = float(input("Valor do aumento: "))
-    print(f"Valor atualizado para {carro1.get_vlaumento()}")
+    print(f"Valor atualizado para {carro1.get_valor()}")
+
 
 
 
