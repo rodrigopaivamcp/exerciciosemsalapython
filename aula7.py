@@ -11,7 +11,7 @@ while True:
         break
     ct_aluno = ct_aluno + 1
     soma_idade = soma_idade + idade
-    if idade < mais_novo:
+    if idade < mais_novo:                
         media = soma_idade/ct_aluno
         mais_novo = idade
     if idade > mais_velho:
@@ -27,3 +27,4 @@ print(f'a quantidade de alunos é {ct_aluno}')
 print(f'a soma das idades dos alunos é {soma_idade}')
 print(f'a idade do aluno mais velho é {mais_velho} anos')
 print(f'a quantidade de alunos com mais de 30 anos é de {ct_30}')
+
