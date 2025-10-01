@@ -18,20 +18,17 @@ if __name__ == '__main__':
 
     funcionario1.set_nome("Carlos")
     funcionario1.set_salario(3500)
-    funcionario1.set_bonificacao(1.1*3500)
 
     funcionario2.set_nome("Júlia")
     funcionario2.set_salario(3250)
-    funcionario2.set_bonificacao(1.1*3250)
 
 
     gerente.set_nome("Alexandre")
     gerente.set_salario(8000)
     gerente.set_qtd_gerencia(3)
-    gerente.set_bonificacao(1.2*8000)
 
     print("\nApós alterações usando setters")
-    print("\nFuncionário1:", funcionario1.get_nome(), "\nsalário:", funcionario1.get_salario(), "\nsalário pós-bonificacao", funcionario1.get_bonificacao())
-    print("\nFuncionário2:", funcionario2.get_nome(), "\nsalário:", funcionario2.get_salario(), "\nsalario pós-bonificacao", funcionario2.get_bonificacao())
+    print("\nFuncionário1:", funcionario1.get_nome(), "\nsalário:", funcionario1.get_salario(), "\nsalário pós-bonificacao", funcionario1.bonificacao())
+    print("\nFuncionário2:", funcionario2.get_nome(), "\nsalário:", funcionario2.get_salario(), "\nsalario pós-bonificacao", funcionario2.bonificacao())
     print("\nGerente:", gerente.get_nome(), "\nsalário:", gerente.get_salario(),"\nfuncionários sob gerência:", gerente.get_qtd_gerencia(),
-          "\nsalario pós-bonificacao", gerente.get_bonificacao())
+          "\nsalario pós-bonificacao", gerente.bonificacao())
