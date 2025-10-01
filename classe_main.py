@@ -8,10 +8,10 @@ if __name__ == '__main__':
     funcionario2 = funcionario(nome="Maria", salario= 3050)
     print(funcionario2)
 
-    print("Funcionário1:", funcionario1.get_nome(), "salário:", funcionario1.get_salario())
+    print("Funcionário1:", funcionario1.get_nome(), "\nsalário:", funcionario1.get_salario())
 
-    print("Funcionário2:", funcionario2.get_nome(), "salário:", funcionario2.get_salario())
+    print("Funcionário2:", funcionario2.get_nome(), "\nsalário:", funcionario2.get_salario())
 
 
     gerente = gerente(nome="Jorge", salario= 7000, funcionario= 2)
-    print("gerente:", gerente.get_nome(), "salário:", gerente.get_salario(), "funcionários sob gerência:", gerente.get_funcionario())
+    print("Gerente:", gerente.get_nome(), "\nsalário:", gerente.get_salario(), "\nfuncionários sob gerência:", gerente.get_funcionario())
