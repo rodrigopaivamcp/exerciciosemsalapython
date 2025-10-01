@@ -9,8 +9,9 @@ class Funcionario:
     def get_salario(self):
         return self.salario
 
-    def get_bonificacao(self):
-        return self.bonificacao
+    def bonificacao(self):
+        bonificacao = self.salario * 1.1 #aumento de 10 %
+        return bonificacao
 
     def set_nome(self, novo_nome):
         self.nome = novo_nome
@@ -18,8 +19,7 @@ class Funcionario:
     def set_salario(self, novo_salario):
         self.salario = novo_salario
 
-    def set_bonificacao(self, salario_bonificado):
-        self.bonificacao = salario_bonificado
+
 
 
 class Gerente(Funcionario):
