@@ -15,8 +15,12 @@ class Veiculo:
     def set_km(self, nova_km):
         self.km = nova_km
 
+    def atualiza_valor(self, valor_atualizado):
+        self.valor_atualizado = valor + (aumento * valor)
+
+
 class Carro(Veiculo):
-    def __init__(self, valor, km, modelo):
+    def __init__(self, valor, km, modelo, atualiza_valor):
         super().__init__(valor, km)
         self.modelo = modelo
 
@@ -27,7 +31,7 @@ class Carro(Veiculo):
         self.modelo = novo_modelo
 
 class Moto(Veiculo):
-    def __init__(self, valor, km, modelo, cilindrada):
+    def __init__(self, valor, km, modelo, cilindrada, atualiza_valor):
         super().__init__(valor, km)
         self.modelo = modelo
         self.cilindrada = cilindrada
