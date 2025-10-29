@@ -41,11 +41,12 @@ if __name__ =='__main__':
     juridica1.set_modalidade('ME')
 
     juridica2 = PessoaJuridica(nome = 'Maria', saldo = 9050, modalidade = 'LTDA')
-    print('\n PessoaJuridica2: ', juridica2.get_nome(), '\nSaldo:', juridica2.get_saldo(), '\nModalidade: ', juridica2.get_modalidade)
+    print('\n PessoaJuridica2: ', juridica2.get_nome(), '\nSaldo:', juridica2.get_saldo(), '\nModalidade: ', juridica2.get_modalidade())
 
     juridica2.set_nome('Julia')
     juridica2.set_saldo(9060)
     juridica2.set_modalidade('SA')
+
 
     print("\nApós alterações usando setters")
     print("\nConta1:", conta1.get_nome(), "\nSaldo:", conta1.get_saldo())
@@ -55,6 +56,9 @@ if __name__ =='__main__':
     print("\nPessoaJuridica1:", juridica1.get_nome(), "\nsaldo:", juridica1.get_saldo(), "\nmodalidade:", juridica1.get_modalidade())
     print("\nPessoaJuridica2:", juridica2.get_nome(), "\nsaldo:", juridica2.get_saldo(), "\nmodalidade:", juridica2.get_modalidade())
 
+    juridica2.deposito(2300)
+    print("\nApós depósito em PessoaJuridica2:")
+    print("Saldo atualizado:", juridica2.get_saldo())
 
 
 
