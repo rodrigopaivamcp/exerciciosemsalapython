@@ -48,9 +48,9 @@ class Circulo(FormaGeometrica):
         self.raio = novo_raio
 
     def area(self):
-        vl_area = pow(self.raio, 2)
+        vl_area = pow(self.raio, 2) * 3.14
         return vl_area
 
     def perimetro(self):
-        vl_perimetro = 2 * 1 * self.raio
+        vl_perimetro = 2 * 3.14 * self.raio
         return vl_perimetro
