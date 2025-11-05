@@ -1,7 +1,14 @@
+# ct_figura = 0
 from abc import ABC, abstractmethod
 class FormaGeometrica(ABC):
+    ct_figura = 0
+
+    @classmethod
+    def get_ct_figura(cls):
+        return cls.ct_figura
     def __init__(self, cor):
         self.cor = cor
+        FormaGeometrica.ct_figura += 1
 
     def get_cor(self):
         return self.cor
@@ -16,6 +23,10 @@ class FormaGeometrica(ABC):
     @abstractmethod
     def perimetro(self):
         pass
+
+
+
+
 
 class Quadrado(FormaGeometrica):
     def __init__(self, cor, lado=2):
@@ -54,3 +65,4 @@ class Circulo(FormaGeometrica):
     def perimetro(self):
         vl_perimetro = 2 * 3.14 * self.raio
         return vl_perimetro
+
