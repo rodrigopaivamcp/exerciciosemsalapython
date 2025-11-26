@@ -21,3 +21,21 @@ class ContaCorrente(Conta):
     def saldo_total(self):
         saldo_total = self.saldo + self.cheque
         return saldo_total
+
+class ContaPoupanca(Conta):
+    def __init__(self, nome, saldo, rendimento=1.5):
+        super().__init__(nome, saldo)
+        self.rendimento = rendimento
+
+    def get_rendimento(self):
+        return self.rendimento
+
+    def set_rendimento(self, novo_rendimento):
+        self.rendimento = novo_rendimento
+
+    def saldo_atualizado(self):
+        saldo_atualizado = self.saldo + self.rendimento
+        return saldo_atualizado
+
+
+
